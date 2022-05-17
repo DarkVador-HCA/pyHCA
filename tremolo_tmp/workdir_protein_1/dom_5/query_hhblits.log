@@ -1,0 +1,22 @@
+- 12:01:33.782 INFO: Searching 15161831 column state sequences.
+
+- 12:01:33.836 INFO: tremolo_tmp/workdir_protein_1/dom_5/query_5.fasta is in A2M, A3M or FASTA format
+
+- 12:01:33.836 INFO: Iteration 1
+
+- 12:01:33.842 INFO: Prefiltering database
+
+- 12:01:42.481 INFO: HMMs passed 1st prefilter (gapless profile-profile alignment)  : 195
+
+- 12:01:42.484 INFO: No HMMs pass prefilter => Stop searching!
+
+Query         query_5 sp|O16810|ORC1_DROME 524-527
+Match_columns 4
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 0
+Date          Mon Feb 25 12:01:42 2019
+Command       hhblits -i tremolo_tmp/workdir_protein_1/dom_5/query_5.fasta -d /bigdata/hhsuite/databases/uniclust/uniclust30_2018_08/uniclust30_2018_08 -scores tremolo_tmp/workdir_protein_1/dom_5/query_hhblits.scores -o tremolo_tmp/workdir_protein_1/dom_5/query_hhblits.hhr -E 1.0 -cov 10 -id 80 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+

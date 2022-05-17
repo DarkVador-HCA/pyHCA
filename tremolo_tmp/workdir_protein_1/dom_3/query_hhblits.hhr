@@ -1,0 +1,140 @@
+Query         query_3 sp|O16810|ORC1_DROME 316-393
+Match_columns 78
+No_of_seqs    22 out of 41
+Neff          3.1821
+Searched_HMMs 196
+Date          Mon Feb 25 12:01:15 2019
+Command       hhblits -i tremolo_tmp/workdir_protein_1/dom_3/query_3.fasta -d /bigdata/hhsuite/databases/uniclust/uniclust30_2018_08/uniclust30_2018_08 -scores tremolo_tmp/workdir_protein_1/dom_3/query_hhblits.scores -o tremolo_tmp/workdir_protein_1/dom_3/query_hhblits.hhr -E 1.0 -cov 10 -id 80 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|A0A182H305|A0A182H305_AEDAL  99.3 5.3E-15 2.2E-20  130.7   0.0   58    1-64    353-411 (857)
+  2 tr|A0A1B0CCP3|A0A1B0CCP3_LUTLO  94.1   0.041 1.3E-07   53.7   0.0   36    9-50    795-830 (1326)
+  3 tr|U4UQB9|U4UQB9_DENPD Unchara  85.1     1.9 6.2E-06   42.0   0.0   32   14-49     11-42  (692)
+  4 tr|A0A0P5YKA7|A0A0P5YKA7_9CRUS  81.2     3.8 1.2E-05   39.3   0.0   54    7-62    190-243 (603)
+  5 tr|A0A0P5G3N6|A0A0P5G3N6_9CRUS  80.9       4 1.2E-05   38.1   0.0   53    7-61     62-114 (443)
+  6 tr|A0A249XN97|A0A249XN97_9CAUD  74.7     8.4 2.6E-05   32.9   0.0   13   14-26     51-63  (181)
+  7 tr|R6V535|R6V535_9FIRM FHA dom  69.3      11 4.3E-05   32.0   0.0   39   13-51     41-79  (172)
+  8 tr|A0A2P8XGV2|A0A2P8XGV2_BLAGE  65.3      19 5.9E-05   31.8   0.0   29   13-41    178-206 (221)
+  9 tr|D0N2Y8|D0N2Y8_PHYIT Unchara  62.1      19 7.5E-05   30.5   0.0   41   13-53     44-87  (161)
+ 10 tr|A0A0L0BPR9|A0A0L0BPR9_LUCCU  56.2      36 0.00011   29.7   0.0   26    7-35    113-138 (189)
+
+No 1
+>tr|A0A182H305|A0A182H305_AEDAL Uncharacterized protein OS=Aedes albopictus OX=7160 PE=4 SV=1
+Probab=99.29  E-value=5.3e-15  Score=130.70  Aligned_cols=58  Identities=74%  Similarity=1.058  Sum_probs=54.3  Template_Neff=3.000
+
+Q query_3           1 LNLSLDRGADTTADSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSVRLASMDVDPLS-LEEA   64 (78)
+Q Consensus         1 Ln~sL~~~~~~~~d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~~~~~~~~tPrs-lr~~   64 (78)
+                      ||+||++++|+++|+||||||||+++++   ++++||||||+||++++++   ++++|++ +++.
+T Consensus       353 ln~sl~~~~~~~~d~dclnYsIV~~~~~---~~~~mkIKLr~Se~~~~~~---~~~~P~s~l~~r  411 (857)
+T tr|A0A182H305|  353 LNLSLDMGADSGADSDCLNYSIVKDTPD---NTNDMKIKLRLSERQKSVR---MDETPRSSLRKR  411 (857)
+Confidence            6889999999999999999999999988   9999999999999999998   7889999 7773
+
+
+No 2
+>tr|A0A1B0CCP3|A0A1B0CCP3_LUTLO Uncharacterized protein OS=Lutzomyia longipalpis OX=7200 PE=3 SV=1 
+Probab=94.09  E-value=0.041  Score=53.74  Aligned_cols=36  Identities=39%  Similarity=0.667  Sum_probs=28.7  Template_Neff=1.000
+
+Q query_3           9 ADTTADSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSVR   50 (78)
+Q Consensus         9 ~~~~~d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~~   50 (78)
+                      .+.+.|+|.||||||....      ..+.+.||+||+|++-+
+T Consensus       795 lnqsvdsdhlnysivdves------dalrvrlrvsenqrkks  830 (1326)
+T tr|A0A1B0CCP3|  795 LNQSVDSDHLNYSIVDVES------DALRVRLRVSENQRKKS  830 (1326)
+Confidence            3455688999999998863      35688999999998874
+
+
+No 3
+>tr|U4UQB9|U4UQB9_DENPD Uncharacterized protein OS=Dendroctonus ponderosae OX=77166 GN=D910_01676 PE=4 SV=1
+Probab=85.08  E-value=1.9  Score=41.96  Aligned_cols=32  Identities=38%  Similarity=0.621  Sum_probs=26.4  Template_Neff=1.445
+
+Q query_3          14 DSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSV   49 (78)
+Q Consensus        14 d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~   49 (78)
+                      -+-.+|||||..+..    ++-..|||+.||+++.+
+T Consensus        11 ~~~v~nysiv~~~ee----en~l~~kl~~s~rh~~p   42 (692)
+T tr|U4UQB9|U4UQ   11 QNRVLNYSIVSSDEE----ENRLVLKLKVSERHKVP   42 (692)
+Confidence            356899999998643    46789999999999877
+
+
+No 4
+>tr|A0A0P5YKA7|A0A0P5YKA7_9CRUS Origin recognition complex subunit (Fragment) OS=Daphnia magna OX=35525 PE=4 SV=1
+Probab=81.22  E-value=3.8  Score=39.33  Aligned_cols=54  Identities=17%  Similarity=0.164  Sum_probs=43.6  Template_Neff=1.000
+
+Q query_3           7 RGADTTADSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSVRLASMDVDPLSLE   62 (78)
+Q Consensus         7 ~~~~~~~d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~~~~~~~~tPrslr   62 (78)
+                      ...|++.++.|++...|+.+.++++|.+  .+.|..||.+.++.-+..-.+|++-.
+T Consensus       190 rqldngknescipsasintprssrrnrq--plllvdseddessvhtgpintprssk  243 (603)
+T tr|A0A0P5YKA7|  190 RQLDNGKNESCIPSASINTPRSSRRNRQ--PLLLVDSEDDESSVHTGPINTPRSSK  243 (603)
+Confidence            4467889999999999999999887776  68888999999886555556787733
+
+
+No 5
+>tr|A0A0P5G3N6|A0A0P5G3N6_9CRUS Putative Origin recognition complex subunit OS=Daphnia magna OX=35525 PE=4 SV=1 
+Probab=80.90  E-value=4  Score=38.11  Aligned_cols=53  Identities=17%  Similarity=0.159  Sum_probs=43.0  Template_Neff=1.000
+
+Q query_3           7 RGADTTADSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSVRLASMDVDPLSL   61 (78)
+Q Consensus         7 ~~~~~~~d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~~~~~~~~tPrsl   61 (78)
+                      ...|.+.++.|++...|+.+.+++++.+  .+.|..||.+.+..-+..-.+|++-
+T Consensus        62 rqldngknescipsasintprssrrnrq--plllvdseddessvhtgpintprss  114 (443)
+T tr|A0A0P5G3N6|   62 RQLDNGKNESCIPSASINTPRSSRRNRQ--PLLLVDSEDDESSVHTGPINTPRSS  114 (443)
+Confidence            4467889999999999999999877776  6888899999988655555677773
+
+
+No 6
+>tr|A0A249XN97|A0A249XN97_9CAUD WhiB-like domain protein OS=Arthrobacter phage GurgleFerb OX=2027884 GN=GURGLEFERB_29 PE=4 SV=1
+Probab=74.71  E-value=8.4  Score=32.86  Aligned_cols=13  Identities=46%  Similarity=0.904  Sum_probs=11.0  Template_Neff=1.000
+
+Q query_3          14 DSDCLNYSIVQQT   26 (78)
+Q Consensus        14 d~dcLNYSIVk~~   26 (78)
+                      -++||||.||++-
+T Consensus        51 fdeclnyaivndm   63 (181)
+T tr|A0A249XN97|   51 FDECLNYAIVNDM   63 (181)
+Confidence            4699999999973
+
+
+No 7
+>tr|R6V535|R6V535_9FIRM FHA domain-containing protein At4g14490 OS=Firmicutes bacterium CAG:227 OX=1263010 GN=BN546_01667 PE=4 SV=1
+Probab=69.27  E-value=11  Score=32.05  Aligned_cols=39  Identities=21%  Similarity=0.430  Sum_probs=29.6  Template_Neff=2.335
+
+Q query_3          13 ADSDCLNYSIVQQTPDPKTPSNDMKIKLRLSERRRSVRL   51 (78)
+Q Consensus        13 ~d~dcLNYSIVk~~~~~~~nt~~mKIKLRlSE~qk~~~~   51 (78)
+                      -.++||||.|-++....+.+..+.-|-|..+..+|..+-
+T Consensus        41 IkE~~LN~~i~N~~~~~~~~~~KiMiyik~~~~~k~~fV   79 (172)
+T tr|R6V535|R6V5   41 IKENCLNYAIQNQGQPAQPQGQKIMIYIKTSNKQKQGFV   79 (172)
+Confidence            357999999999976655566766677777888887753
+
+
+No 8
+>tr|A0A2P8XGV2|A0A2P8XGV2_BLAGE Uncharacterized protein (Fragment) OS=Blattella germanica OX=6973 GN=C0J52_27330 PE=4 SV=1 
+Probab=65.31  E-value=19  Score=31.77  Aligned_cols=29  Identities=31%  Similarity=0.557  Sum_probs=19.7  Template_Neff=1.000
+
+Q query_3          13 ADSDCLNYSIVQQTPDPKTPSNDMKIKLR   41 (78)
+Q Consensus        13 ~d~dcLNYSIVk~~~~~~~nt~~mKIKLR   41 (78)
+                      ..++||||-|+-..-..++.+.++|||+.
+T Consensus       178 rkesclnygiifvsitrkkkrkkikikit  206 (221)
+T tr|A0A2P8XGV2|  178 RKESCLNYGIIFVSITRKKKRKKIKIKIT  206 (221)
+Confidence            45789999998876665555555555543
+
+
+No 9
+>tr|D0N2Y8|D0N2Y8_PHYIT Uncharacterized protein OS=Phytophthora infestans (strain T30-4) OX=403677 GN=PITG_05497 PE=4 SV=1
+Probab=62.14  E-value=19  Score=30.54  Aligned_cols=41  Identities=24%  Similarity=0.476  Sum_probs=30.7  Template_Neff=2.590
+
+Q query_3          13 ADSDCLNYSIVQQTP---DPKTPSNDMKIKLRLSERRRSVRLAS   53 (78)
+Q Consensus        13 ~d~dcLNYSIVk~~~---~~~~nt~~mKIKLRlSE~qk~~~~~~   53 (78)
+                      .-+=||+.|||..-.   ....|-.+|-+-+|+||..|.+.-+-
+T Consensus        44 pAsCCiC~siv~eIEtqLN~TqnDhemDVVFRISEEKKqIkYSR   87 (161)
+T tr|D0N2Y8|D0N2   44 PASCCICRSIVFEIETQLNNTQNDHDMDVVFRISEEKKQIKYSR   87 (161)
+Confidence            345699999997532   23346789999999999999986433
+
+
+No 10
+>tr|A0A0L0BPR9|A0A0L0BPR9_LUCCU Uncharacterized protein OS=Lucilia cuprina OX=7375 GN=FF38_03376 PE=4 SV=1 
+Probab=56.21  E-value=36  Score=29.75  Aligned_cols=26  Identities=42%  Similarity=0.551  Sum_probs=19.9  Template_Neff=1.000
+
+Q query_3           7 RGADTTADSDCLNYSIVQQTPDPKTPSND   35 (78)
+Q Consensus         7 ~~~~~~~d~dcLNYSIVk~~~~~~~nt~~   35 (78)
+                      .++|.+.|-.||-||||+...-   |+++
+T Consensus       113 veadatadvncliysiikstri---nech  138 (189)
+T tr|A0A0L0BPR9|  113 VEADATADVNCLIYSIIKSTRI---NECH  138 (189)
+Confidence            3456678889999999998765   5554
+
+

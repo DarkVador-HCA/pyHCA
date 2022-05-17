@@ -1,0 +1,140 @@
+Query         query_1 sp|O16810|ORC1_DROME 169-192
+Match_columns 24
+No_of_seqs    1 out of 1
+Neff          1
+Searched_HMMs 100
+Date          Mon Feb 25 12:00:32 2019
+Command       hhblits -i tremolo_tmp/workdir_protein_1/dom_1/query_1.fasta -d /bigdata/hhsuite/databases/uniclust/uniclust30_2018_08/uniclust30_2018_08 -scores tremolo_tmp/workdir_protein_1/dom_1/query_hhblits.scores -o tremolo_tmp/workdir_protein_1/dom_1/query_hhblits.hhr -E 1.0 -cov 10 -id 80 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|A0A0A8YY04|A0A0A8YY04_ARUDO  91.6    0.26   8E-07   26.9   0.0   12   11-22     15-26  (34)
+  2 tr|A0A0J9XUV1|A0A0J9XUV1_BRUMA  90.2    0.49 1.5E-06   29.3   0.0   11   10-20     33-43  (75)
+  3 tr|A0A023EV63|A0A023EV63_AEDAL  86.2     1.5 4.9E-06   35.4   0.0   19    3-21     97-115 (787)
+  4 tr|A0A292YMI3|A0A292YMI3_9BACL  85.8     1.7 5.3E-06   25.1   0.0   15    3-17     22-36  (45)
+  5 tr|A0A2E7GBQ6|A0A2E7GBQ6_9PROT  84.3     2.3 7.2E-06   34.5   0.0   21    3-23    718-738 (805)
+  6 tr|A0A1A6GUF5|A0A1A6GUF5_NEOLE  84.1     2.4 7.4E-06   27.5   0.0   23    2-24     39-61  (98)
+  7 tr|A0A2P2LJ14|A0A2P2LJ14_RHIMU  84.0     2.5 7.6E-06   23.2   0.0   14    2-15      7-20  (32)
+  8 tr|A0A1V3MZD8|A0A1V3MZD8_9SPHI  83.0     2.9   9E-06   25.9   0.0   13    9-21      2-14  (70)
+  9 tr|A0A2V8UPB2|A0A2V8UPB2_9BACT  82.8       3 9.4E-06   26.8   0.0   18    3-20     27-44  (89)
+ 10 tr|A0A1Q7G897|A0A1Q7G897_9ARCH  82.3     3.3   1E-05   26.1   0.0   17    2-18     52-68  (77)
+
+No 1
+>tr|A0A0A8YY04|A0A0A8YY04_ARUDO Uncharacterized protein OS=Arundo donax OX=35708 PE=4 SV=1 
+Probab=91.64  E-value=0.26  Score=26.88  Aligned_cols=12  Identities=67%  Similarity=1.079  Sum_probs=9.5  Template_Neff=1.000
+
+Q query_1          11 VKRSYRLIPLEI   22 (24)
+Q Consensus        11 vkrsyrliplei   22 (24)
+                      ..||||||||-.
+T Consensus        15 qhrsyrliplml   26 (34)
+T tr|A0A0A8YY04|   15 QHRSYRLIPLML   26 (34)
+Confidence            358999999853
+
+
+No 2
+>tr|A0A0J9XUV1|A0A0J9XUV1_BRUMA Bm463, isoform a OS=Brugia malayi OX=6279 GN=Bm463 PE=4 SV=1 
+Probab=90.21  E-value=0.49  Score=29.26  Aligned_cols=11  Identities=73%  Similarity=1.192  Sum_probs=9.3  Template_Neff=1.000
+
+Q query_1          10 KVKRSYRLIPL   20 (24)
+Q Consensus        10 kvkrsyrlipl   20 (24)
+                      .-||||||||+
+T Consensus        33 hnkrsyrlipi   43 (75)
+T tr|A0A0J9XUV1|   33 HNKRSYRLIPI   43 (75)
+Confidence            35899999996
+
+
+No 3
+>tr|A0A023EV63|A0A023EV63_AEDAL Putative drop dead (Fragment) OS=Aedes albopictus OX=7160 PE=2 SV=1
+Probab=86.21  E-value=1.5  Score=35.41  Aligned_cols=19  Identities=53%  Similarity=1.027  Sum_probs=16.8  Template_Neff=1.269
+
+Q query_1           3 VSRYRFVKVKRSYRLIPLE   21 (24)
+Q Consensus         3 vsryrfvkvkrsyrliple   21 (24)
+                      -|.|.|-||+||||+-|..
+T Consensus        97 eskykfekvr~syr~sp~q  115 (787)
+T tr|A0A023EV63|   97 ESKYKFEKVRKSYRLSPVQ  115 (787)
+Confidence            3789999999999999864
+
+
+No 4
+>tr|A0A292YMI3|A0A292YMI3_9BACL Uncharacterized protein OS=Effusibacillus lacus OX=1348429 GN=EFBL_2804 PE=4 SV=1 
+Probab=85.81  E-value=1.7  Score=25.09  Aligned_cols=15  Identities=53%  Similarity=1.028  Sum_probs=12.6  Template_Neff=1.000
+
+Q query_1           3 VSRYRFVKVKRSYRL   17 (24)
+Q Consensus         3 vsryrfvkvkrsyrl   17 (24)
+                      ..|||||+|+..||-
+T Consensus        22 saryrfvrvrpryrq   36 (45)
+T tr|A0A292YMI3|   22 SARYRFVRVRPRYRQ   36 (45)
+Confidence            468999999988874
+
+
+No 5
+>tr|A0A2E7GBQ6|A0A2E7GBQ6_9PROT Hydroxymethylbilane synthase OS=Bdellovibrionaceae bacterium OX=2026715 GN=CL678_07755 PE=3 SV=1 
+Probab=84.34  E-value=2.3  Score=34.52  Aligned_cols=21  Identities=57%  Similarity=0.901  Sum_probs=17.5  Template_Neff=1.000
+
+Q query_1           3 VSRYRFVKVKRSYRLIPLEIH   23 (24)
+Q Consensus         3 vsryrfvkvkrsyrlipleih   23 (24)
+                      ||.+.--.||..||||||||.
+T Consensus       718 vsswdhpqvkstyrlipleid  738 (805)
+T tr|A0A2E7GBQ6|  718 VSSWDHPQVKSTYRLIPLEID  738 (805)
+Confidence            566667789999999999984
+
+
+No 6
+>tr|A0A1A6GUF5|A0A1A6GUF5_NEOLE Uncharacterized protein (Fragment) OS=Neotoma lepida OX=56216 GN=A6R68_01895 PE=4 SV=1 
+Probab=84.14  E-value=2.4  Score=27.54  Aligned_cols=23  Identities=48%  Similarity=0.791  Sum_probs=21.2  Template_Neff=1.000
+
+Q query_1           2 FVSRYRFVKVKRSYRLIPLEIHL   24 (24)
+Q Consensus         2 fvsryrfvkvkrsyrlipleihl   24 (24)
+                      |.|-|-|.|+..|..-.||.|||
+T Consensus        39 flsfygfykishsvtsfplqihl   61 (98)
+T tr|A0A1A6GUF5|   39 FLSFYGFYKISHSVTSFPLQIHL   61 (98)
+Confidence            67889999999999999999996
+
+
+No 7
+>tr|A0A2P2LJ14|A0A2P2LJ14_RHIMU Uncharacterized protein OS=Rhizophora mucronata OX=61149 PE=4 SV=1 
+Probab=84.00  E-value=2.5  Score=23.18  Aligned_cols=14  Identities=64%  Similarity=0.826  Sum_probs=12.2  Template_Neff=1.000
+
+Q query_1           2 FVSRYRFVKVKRSY   15 (24)
+Q Consensus         2 fvsryrfvkvkrsy   15 (24)
+                      |+|-|-|||||-|-
+T Consensus         7 fislymfvkvkcsq   20 (32)
+T tr|A0A2P2LJ14|    7 FISLYMFVKVKCSQ   20 (32)
+Confidence            78999999999764
+
+
+No 8
+>tr|A0A1V3MZD8|A0A1V3MZD8_9SPHI Uncharacterized protein OS=Sphingobacterium sp. CZ-UAM OX=1933868 GN=BWD42_12865 PE=4 SV=1 
+Probab=83.02  E-value=2.9  Score=25.94  Aligned_cols=13  Identities=69%  Similarity=1.037  Sum_probs=11.4  Template_Neff=1.000
+
+Q query_1           9 VKVKRSYRLIPLE   21 (24)
+Q Consensus         9 vkvkrsyrliple   21 (24)
+                      ||.|+|||||.|.
+T Consensus         2 vkakksyrlialn   14 (70)
+T tr|A0A1V3MZD8|    2 VKAKKSYRLIALN   14 (70)
+Confidence            7899999999874
+
+
+No 9
+>tr|A0A2V8UPB2|A0A2V8UPB2_9BACT Uncharacterized protein OS=Acidobacteria bacterium OX=1978231 GN=DMG57_25895 PE=4 SV=1 
+Probab=82.75  E-value=3  Score=26.76  Aligned_cols=18  Identities=56%  Similarity=0.892  Sum_probs=15.6  Template_Neff=1.000
+
+Q query_1           3 VSRYRFVKVKRSYRLIPL   20 (24)
+Q Consensus         3 vsryrfvkvkrsyrlipl   20 (24)
+                      |.||||.|..||..|+.|
+T Consensus        27 vdryrffkaarshqlltl   44 (89)
+T tr|A0A2V8UPB2|   27 VDRYRFFKAARSHQLLTL   44 (89)
+Confidence            679999999999888754
+
+
+No 10
+>tr|A0A1Q7G897|A0A1Q7G897_9ARCH Uncharacterized protein OS=Thaumarchaeota archaeon 13_1_40CM_4_38_7 OX=1805394 GN=AUH84_03245 PE=4 SV=1 
+Probab=82.31  E-value=3.3  Score=26.10  Aligned_cols=17  Identities=47%  Similarity=1.052  Sum_probs=14.5  Template_Neff=1.000
+
+Q query_1           2 FVSRYRFVKVKRSYRLI   18 (24)
+Q Consensus         2 fvsryrfvkvkrsyrli   18 (24)
+                      |..|+-|||.||.|-..
+T Consensus        52 fltrfdfvklkrqyvvl   68 (77)
+T tr|A0A1Q7G897|   52 FLTRFDFVKLKRQYVVL   68 (77)
+Confidence            67899999999998654
+
+

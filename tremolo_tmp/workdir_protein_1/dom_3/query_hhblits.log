@@ -1,0 +1,96 @@
+- 12:00:58.089 INFO: Searching 15161831 column state sequences.
+
+- 12:00:58.145 INFO: tremolo_tmp/workdir_protein_1/dom_3/query_3.fasta is in A2M, A3M or FASTA format
+
+- 12:00:58.145 INFO: Iteration 1
+
+- 12:00:58.199 INFO: Prefiltering database
+
+- 12:01:06.466 INFO: HMMs passed 1st prefilter (gapless profile-profile alignment)  : 200032
+
+- 12:01:06.860 INFO: HMMs passed 2nd prefilter (gapped profile-profile alignment)   : 100
+
+- 12:01:06.860 INFO: HMMs passed 2nd prefilter and not found in previous iterations : 100
+
+- 12:01:06.860 INFO: Scoring 100 HMMs using HMM-HMM Viterbi alignment
+
+- 12:01:06.942 INFO: Alternative alignment: 0
+
+- 12:01:06.955 INFO: 100 alignments done
+
+- 12:01:06.955 INFO: Alternative alignment: 1
+
+- 12:01:06.967 INFO: 100 alignments done
+
+- 12:01:06.967 INFO: Alternative alignment: 2
+
+- 12:01:06.967 INFO: Alternative alignment: 3
+
+- 12:01:07.007 INFO: Realigning 10 HMM-HMM alignments using Maximum Accuracy algorithm
+
+- 12:01:07.027 INFO: 1 sequences belonging to 1 database HMMs found with an E-value < 0.001
+
+- 12:01:07.027 INFO: Number of effective sequences of resulting query HMM: Neff = 3.1821
+
+- 12:01:07.030 INFO: Iteration 2
+
+- 12:01:07.082 INFO: Prefiltering database
+
+- 12:01:15.393 INFO: HMMs passed 1st prefilter (gapless profile-profile alignment)  : 126082
+
+- 12:01:15.614 INFO: HMMs passed 2nd prefilter (gapped profile-profile alignment)   : 100
+
+- 12:01:15.614 INFO: HMMs passed 2nd prefilter and not found in previous iterations : 99
+
+- 12:01:15.614 INFO: Scoring 99 HMMs using HMM-HMM Viterbi alignment
+
+- 12:01:15.681 INFO: Alternative alignment: 0
+
+- 12:01:15.692 INFO: 99 alignments done
+
+- 12:01:15.692 INFO: Alternative alignment: 1
+
+- 12:01:15.702 INFO: 91 alignments done
+
+- 12:01:15.702 INFO: Alternative alignment: 2
+
+- 12:01:15.702 INFO: Alternative alignment: 3
+
+- 12:01:15.746 INFO: Rescoring previously found HMMs with Viterbi algorithm
+
+- 12:01:15.817 INFO: Alternative alignment: 0
+
+- 12:01:15.820 INFO: 1 alignments done
+
+- 12:01:15.820 INFO: Alternative alignment: 1
+
+- 12:01:15.870 INFO: 1 alignments done
+
+- 12:01:15.870 INFO: Alternative alignment: 2
+
+- 12:01:15.870 INFO: Alternative alignment: 3
+
+- 12:01:15.913 INFO: Realigning 10 HMM-HMM alignments using Maximum Accuracy algorithm
+
+- 12:01:15.938 INFO: 1 sequences belonging to 1 database HMMs found with an E-value < 0.001
+
+Query         query_3 sp|O16810|ORC1_DROME 316-393
+Match_columns 78
+No_of_seqs    22 out of 41
+Neff          3.1821
+Searched_HMMs 196
+Date          Mon Feb 25 12:01:15 2019
+Command       hhblits -i tremolo_tmp/workdir_protein_1/dom_3/query_3.fasta -d /bigdata/hhsuite/databases/uniclust/uniclust30_2018_08/uniclust30_2018_08 -scores tremolo_tmp/workdir_protein_1/dom_3/query_hhblits.scores -o tremolo_tmp/workdir_protein_1/dom_3/query_hhblits.hhr -E 1.0 -cov 10 -id 80 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|A0A182H305|A0A182H305_AEDAL  99.3 5.3E-15 2.2E-20  130.7   0.0   58    1-64    353-411 (857)
+  2 tr|A0A1B0CCP3|A0A1B0CCP3_LUTLO  94.1   0.041 1.3E-07   53.7   0.0   36    9-50    795-830 (1326)
+  3 tr|U4UQB9|U4UQB9_DENPD Unchara  85.1     1.9 6.2E-06   42.0   0.0   32   14-49     11-42  (692)
+  4 tr|A0A0P5YKA7|A0A0P5YKA7_9CRUS  81.2     3.8 1.2E-05   39.3   0.0   54    7-62    190-243 (603)
+  5 tr|A0A0P5G3N6|A0A0P5G3N6_9CRUS  80.9       4 1.2E-05   38.1   0.0   53    7-61     62-114 (443)
+  6 tr|A0A249XN97|A0A249XN97_9CAUD  74.7     8.4 2.6E-05   32.9   0.0   13   14-26     51-63  (181)
+  7 tr|R6V535|R6V535_9FIRM FHA dom  69.3      11 4.3E-05   32.0   0.0   39   13-51     41-79  (172)
+  8 tr|A0A2P8XGV2|A0A2P8XGV2_BLAGE  65.3      19 5.9E-05   31.8   0.0   29   13-41    178-206 (221)
+  9 tr|D0N2Y8|D0N2Y8_PHYIT Unchara  62.1      19 7.5E-05   30.5   0.0   41   13-53     44-87  (161)
+ 10 tr|A0A0L0BPR9|A0A0L0BPR9_LUCCU  56.2      36 0.00011   29.7   0.0   26    7-35    113-138 (189)
+

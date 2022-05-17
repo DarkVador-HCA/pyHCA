@@ -1,0 +1,140 @@
+Query         query_2 sp|O16810|ORC1_DROME 248-290
+Match_columns 43
+No_of_seqs    19 out of 41
+Neff          3.12065
+Searched_HMMs 194
+Date          Mon Feb 25 12:00:53 2019
+Command       hhblits -i tremolo_tmp/workdir_protein_1/dom_2/query_2.fasta -d /bigdata/hhsuite/databases/uniclust/uniclust30_2018_08/uniclust30_2018_08 -scores tremolo_tmp/workdir_protein_1/dom_2/query_hhblits.scores -o tremolo_tmp/workdir_protein_1/dom_2/query_hhblits.hhr -E 1.0 -cov 10 -id 80 
+
+ No Hit                             Prob E-value P-value  Score    SS Cols Query HMM  Template HMM
+  1 tr|A0A182H305|A0A182H305_AEDAL  97.4 2.4E-06   1E-11   70.1   0.0   33    1-34    272-305 (857)
+  2 tr|A0A2G7HMX1|A0A2G7HMX1_9CLOT  89.6    0.61 1.9E-06   29.3   0.0   28   16-43      4-31  (51)
+  3 tr|D6S8B9|D6S8B9_FINMA Unchara  84.8     2.1 6.5E-06   26.0   0.0   15   18-32      1-15  (40)
+  4 tr|A0A2P6L2H7|A0A2P6L2H7_NEPCL  79.7     4.8 1.5E-05   27.1   0.0   18   16-33     30-47  (72)
+  5 tr|A0A183F4A9|A0A183F4A9_HELBK  79.5     4.9 1.5E-05   25.5   0.0   22    1-22     17-38  (49)
+  6 tr|A0A255S5Q5|A0A255S5Q5_9BACT  79.4     4.9 1.5E-05   28.5   0.0   16   19-34     79-94  (102)
+  7 tr|A0A0A9C7N3|A0A0A9C7N3_ARUDO  78.3     5.7 1.8E-05   22.5   0.0   16   13-28     10-25  (26)
+  8 tr|A0A1N6NFW4|A0A1N6NFW4_9GAMM  76.7     6.8 2.1E-05   27.3   0.0   25   16-40     50-74  (87)
+  9 tr|A0A2E4W5P6|A0A2E4W5P6_9BACT  74.2     8.9 2.8E-05   26.8   0.0   23   15-37     46-68  (87)
+ 10 tr|A0A0C9Y6N1|A0A0C9Y6N1_9AGAR  71.8      11 3.5E-05   26.1   0.0   28   13-40     44-71  (82)
+
+No 1
+>tr|A0A182H305|A0A182H305_AEDAL Uncharacterized protein OS=Aedes albopictus OX=7160 PE=4 SV=1
+Probab=97.43  E-value=2.4e-06  Score=70.14  Aligned_cols=33  Identities=70%  Similarity=1.003  Sum_probs=30.6  Template_Neff=3.000
+
+Q query_2           1 VEFIDV-NSFICENKVSPIKIVGGRSVVRLSEKKN   34 (43)
+Q Consensus         1 iEfvd~-~~~~~e~kVsp~KivEdRwvVklsd~~~   34 (43)
+                      +|||++ +++++ ++|||+||+||||+|+++|++.
+T Consensus       272 ~e~v~~~~~~~~-~~vsp~ki~~~~~~V~~~d~~k  305 (857)
+T tr|A0A182H305|  272 LEFVDVLNYFNC-NKVSPIKIVEDRWVVSLSDKKK  305 (857)
+Confidence            589999 99999 9999999999999999999853
+
+
+No 2
+>tr|A0A2G7HMX1|A0A2G7HMX1_9CLOT Uncharacterized protein OS=Clostridium combesii OX=39481 GN=CS538_04375 PE=4 SV=1
+Probab=89.64  E-value=0.61  Score=29.26  Aligned_cols=28  Identities=39%  Similarity=0.563  Sum_probs=24.5  Template_Neff=1.000
+
+Q query_2          16 SPIKIVGGRSVVRLSEKKNAPEINANYL   43 (43)
+Q Consensus        16 sp~KivEdRwvVklsd~~~~~~~~~~~~   43 (43)
+                      .+.||.+.+-.|..-|-+|.||||.||.
+T Consensus         4 kknkirgnkeqvnsldlknnpeinsnyy   31 (51)
+T tr|A0A2G7HMX1|    4 KKNKIRGNKEQLNSLDLKNNPEINSNYY   31 (51)
+Confidence            4568889999999999999999999983
+
+
+No 3
+>tr|D6S8B9|D6S8B9_FINMA Uncharacterized protein OS=Finegoldia magna ATCC 53516 OX=525282 GN=HMPREF0391_10705 PE=4 SV=1 
+Probab=84.84  E-value=2.1  Score=26.01  Aligned_cols=15  Identities=33%  Similarity=0.556  Sum_probs=12.7  Template_Neff=1.000
+
+Q query_2          18 IKIVGGRSVVRLSEK   32 (43)
+Q Consensus        18 ~KivEdRwvVklsd~   32 (43)
+                      +|+.|.+|+|+++..
+T Consensus         1 mklqerkwvvriskr   15 (40)
+T tr|D6S8B9|D6S8    1 MKLQERKWVVRISKR   15 (40)
+Confidence            578899999999854
+
+
+No 4
+>tr|A0A2P6L2H7|A0A2P6L2H7_NEPCL Gyc32E OS=Nephila clavipes OX=6915 GN=NCL1_19476 PE=4 SV=1 
+Probab=79.67  E-value=4.8  Score=27.15  Aligned_cols=18  Identities=33%  Similarity=0.333  Sum_probs=14.1  Template_Neff=1.000
+
+Q query_2          16 SPIKIVGGRSVVRLSEKK   33 (43)
+Q Consensus        16 sp~KivEdRwvVklsd~~   33 (43)
+                      |..-++..||+|+++|-+
+T Consensus        30 ssnclvdsrwvvkisdfg   47 (72)
+T tr|A0A2P6L2H7|   30 SSNCLVDSRWVVKISDFG   47 (72)
+Confidence            445578999999999854
+
+
+No 5
+>tr|A0A183F4A9|A0A183F4A9_HELBK Uncharacterized protein OS=Heligmosomoides polygyrus bakeri OX=375939 PE=4 SV=1 
+Probab=79.47  E-value=4.9  Score=25.47  Aligned_cols=22  Identities=50%  Similarity=0.501  Sum_probs=18.1  Template_Neff=1.000
+
+Q query_2           1 VEFIDVNSFICENKVSPIKIVG   22 (43)
+Q Consensus         1 iEfvd~~~~~~e~kVsp~KivE   22 (43)
+                      +||-|+-+..+|.+||++||+.
+T Consensus        17 iefhdvvirppeskvskmkiva   38 (49)
+T tr|A0A183F4A9|   17 IEFHDVVIRPPESKVSKMKIVA   38 (49)
+Confidence            4777887778889999999974
+
+
+No 6
+>tr|A0A255S5Q5|A0A255S5Q5_9BACT Uncharacterized protein OS=Prevotella sp. P3-120 OX=2024220 GN=CIK97_10360 PE=4 SV=1
+Probab=79.38  E-value=4.9  Score=28.51  Aligned_cols=16  Identities=50%  Similarity=0.650  Sum_probs=13.5  Template_Neff=1.000
+
+Q query_2          19 KIVGGRSVVRLSEKKN   34 (43)
+Q Consensus        19 KivEdRwvVklsd~~~   34 (43)
+                      -.++|||+|.++|.+.
+T Consensus        79 pqvggrwvvelsdidh   94 (102)
+T tr|A0A255S5Q5|   79 PQVGGRWVVELSDIDH   94 (102)
+Confidence            4689999999998764
+
+
+No 7
+>tr|A0A0A9C7N3|A0A0A9C7N3_ARUDO Uncharacterized protein OS=Arundo donax OX=35708 PE=4 SV=1 
+Probab=78.26  E-value=5.7  Score=22.47  Aligned_cols=16  Identities=19%  Similarity=0.227  Sum_probs=13.9  Template_Neff=1.000
+
+Q query_2          13 NKVSPIKIVGGRSVVR   28 (43)
+Q Consensus        13 ~kVsp~KivEdRwvVk   28 (43)
+                      ...|+..|.||.|.|+
+T Consensus        10 seisqyrihednwavs   25 (26)
+T tr|A0A0A9C7N3|   10 SEISQYRIHEDNWAVS   25 (26)
+Confidence            5678999999999985
+
+
+No 8
+>tr|A0A1N6NFW4|A0A1N6NFW4_9GAMM Uncharacterized protein OS=Aeromonas veronii OX=654 GN=SAMN05892873_101216 PE=4 SV=1 
+Probab=76.68  E-value=6.8  Score=27.25  Aligned_cols=25  Identities=44%  Similarity=0.444  Sum_probs=21.5  Template_Neff=1.000
+
+Q query_2          16 SPIKIVGGRSVVRLSEKKNAPEINA   40 (43)
+Q Consensus        16 sp~KivEdRwvVklsd~~~~~~~~~   40 (43)
+                      +--+|...|..|++...+|.||||.
+T Consensus        50 qvghinrersrvklqsgknlpeink   74 (87)
+T tr|A0A1N6NFW4|   50 QVGHINRERSRVKLQSGKNLPEINK   74 (87)
+Confidence            3446788899999999999999985
+
+
+No 9
+>tr|A0A2E4W5P6|A0A2E4W5P6_9BACT Uncharacterized protein OS=Acidobacteria bacterium OX=1978231 GN=CL489_06575 PE=4 SV=1 
+Probab=74.15  E-value=8.9  Score=26.75  Aligned_cols=23  Identities=22%  Similarity=0.384  Sum_probs=18.5  Template_Neff=1.000
+
+Q query_2          15 VSPIKIVGGRSVVRLSEKKNAPE   37 (43)
+Q Consensus        15 Vsp~KivEdRwvVklsd~~~~~~   37 (43)
+                      ..+++++||+|+|-++|.+....
+T Consensus        46 takirlvedhwvviltdeegtsa   68 (87)
+T tr|A0A2E4W5P6|   46 TAKIRLVEDHWVVILTDEEGTSA   68 (87)
+Confidence            35789999999999998776443
+
+
+No 10
+>tr|A0A0C9Y6N1|A0A0C9Y6N1_9AGAR Unplaced genomic scaffold K443scaffold_3, whole genome shotgun sequence (Fragment) OS=Laccaria amethystina LaAM-08-1 OX=1095629 GN=K443DRAFT_82608 PE=4 SV=1 
+Probab=71.85  E-value=11  Score=26.11  Aligned_cols=28  Identities=36%  Similarity=0.450  Sum_probs=22.7  Template_Neff=1.000
+
+Q query_2          13 NKVSPIKIVGGRSVVRLSEKKNAPEINA   40 (43)
+Q Consensus        13 ~kVsp~KivEdRwvVklsd~~~~~~~~~   40 (43)
+                      .-||.+---..+|.|+++..+.+||...
+T Consensus        44 hgvstivrarskwlvklsrdkdapeatr   71 (82)
+T tr|A0A0C9Y6N1|   44 HGVSTIVRARSKWLVKLSRDKDAPEATR   71 (82)
+Confidence            4566777778899999999999998643
+
+
