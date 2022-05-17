@@ -76,59 +76,6 @@ Usage
 =====
 
 
-dispred
---------
-
-Predict protein disorder at the amino acid level using HCA and physico-chemical features from AAIndex
-
-    $ hcatk dispred -h
-
-    usage: hcatk dispred [-h] -i FASTAFILE -o OUTPUTFILE -m MODEL [--verbose]
-
-
-Arguments:
-**********
-
-    -h, --help            show help message and exit
-    
-required arguments:
-
-    -i FASTAFILE   the fasta file
-    -o OUTPUTFILE  output file in svg format
-    -m MODEL       model to use
-
-optional arguments:
-
-    -v --verbose      print information
-
-
-Example:
-********
-
-    $ hcatk dispred -i data/orc1.fasta -o data/orc1.allowDSoverlap.txt -m pyHCA/model_weights/allowDSoverlap.h5
-
-
-Models `allowDSoverlap.h5` and `noDSoverlap.h5` can be found in the `pyHCA/model_weights/` directory of the github repository.
-
-
-Output format:
-**************
-
-The output is formated in a fasta like file, with an header storing the protein name
-
-    >protein_name
-
-followed by four columns (index, amino acid, score, prediction: 0=ordered, 1=disordered)
-
-	1 M 0.202 0
-	2 V 0.223 0
-	3 N 0.270 1
-	4 K 0.292 1
-	5 E 0.353 1
-	6 N 0.450 1
-	7 A 0.312 1
-
-
 segment
 -------
 
@@ -193,7 +140,6 @@ The fourth column corresponds to the HCA score of the domain sequence.
 
 HCA scores are provided for the whole protein sequence and domain with less than 30 amino acids for information only.
 The scores and p-values associated where designed on globular protein domains and intrinsically disordered regions of comparable lengths and with more than 30 amino acids.
-
 
 
     
@@ -387,6 +333,59 @@ Output Format:
 
 The output is a pdf file representing the domain arrangement of each sequence associated with the protein domain query used in tremolo. 
 Each sequence is positioned on a taxonomic tree according to the species to which the sequence belongs to.
+
+dispred
+--------
+
+Predict protein disorder at the amino acid level using HCA and physico-chemical features from AAIndex
+
+    $ hcatk dispred -h
+
+    usage: hcatk dispred [-h] -i FASTAFILE -o OUTPUTFILE -m MODEL [--verbose]
+
+
+Arguments:
+**********
+
+    -h, --help            show help message and exit
+    
+required arguments:
+
+    -i FASTAFILE   the fasta file
+    -o OUTPUTFILE  output file in svg format
+    -m MODEL       model to use
+
+optional arguments:
+
+    -v --verbose      print information
+
+
+Example:
+********
+
+    $ hcatk dispred -i data/orc1.fasta -o data/orc1.allowDSoverlap.txt -m pyHCA/model_weights/allowDSoverlap.h5
+
+
+Models `allowDSoverlap.h5` and `noDSoverlap.h5` can be found in the `pyHCA/model_weights/` directory of the github repository.
+
+
+Output format:
+**************
+
+The output is formated in a fasta like file, with an header storing the protein name
+
+    >protein_name
+
+followed by four columns (index, amino acid, score, prediction: 0=ordered, 1=disordered)
+
+	1 M 0.202 0
+	2 V 0.223 0
+	3 N 0.270 1
+	4 K 0.292 1
+	5 E 0.353 1
+	6 N 0.450 1
+	7 A 0.312 1
+
 
 
 Additional ressources
