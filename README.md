@@ -4,6 +4,8 @@ pyHCA and hcatk (HCA toolkit) are a python library and executable for the Hydrop
 pyHCA implements various class and function for handling sequences and analyses them
 hcatk provides off the hands set of program to perform hydrophobic cluster analyses.
 
+The first version of pyHCA can be found here : https://github.com/T-B-F/pyHCA
+
 Requires
 ========
 
@@ -79,7 +81,7 @@ Usage
 segment
 -------
 
-Use the composition in hydrophobic cluster of a sequence to detect domains.
+Use the composition in hydrophobic cluster of a sequence to detect foldable segments and compute their HCA score.
 
     $ hcatk segment -h
 
@@ -102,7 +104,7 @@ optional arguments:
     -v                    keep temporary results
     -m {cluster,domain}   method to use, cluster: will report *the hydrophobic
                           clusters found in the sequence, domain: will delineate
-                          domains based on the hydrophobic cluster profile of
+                          domains (foldable segments) based on the hydrophobic cluster profile of
                           the sequence
     -t {aminoacid,nucleotide}
                           the type of the biological sequences passed in the
