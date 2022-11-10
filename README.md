@@ -138,12 +138,6 @@ The p-value of the domain is computed against a reference distribution made of i
 A nan value is returned if the domain has less than 30 residues.
 The fourth column corresponds to the HCA score of the domain sequence.
 
-/!\ Warning /!\
-
-HCA scores are provided for the whole protein sequence and domain with less than 30 amino acids for information only.
-The scores and p-values associated where designed on globular protein domains and intrinsically disordered regions of comparable lengths and with more than 30 amino acids.
-
-
     
 draw
 ----
